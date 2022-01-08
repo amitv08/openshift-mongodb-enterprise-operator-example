@@ -14,6 +14,7 @@ spec:
   security: 
     authentication: 
       enabled: true
-      modes: 
-        - SCRAM
-
+      modes: ["SCRAM","X509"]
+    tls: 
+      ca: test-project-ca
+      enabled: true
